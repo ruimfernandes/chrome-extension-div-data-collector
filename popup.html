@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="popup.js"></script>
+  <title>Data collector</title>
+</head>
+
+<body>
+  <div class="modal-header">
+    <h1 class="logo">
+      <img src="images/logo.png" alt="logo" class="logo-icon"> Data collector
+      <span class="version">1.0.0</span>
+    </h1>
+  </div>
+  <div class="model-content">
+    <p>Class name: </p>
+    <input type="text" onkeyup="selectElements(this.value)" />
+    <p>Select count: </p>
+    <input type="text" onkeyup="setSelectCount(this.value)" />
+  </div>
+
+  <button onclick="storeAggregatedValue()">Save data</button>
+  </br>
+  <button onclick="clearAggregatedValue()">Clear data</button>
+  </br>
+  <div class="current-value" style="margin-top: 50px; margin-left: 50px; font-weight: bolder; font-size: 20px; color: #007f00">Current value: 0</div>
+  <div class="aggregated-value" style="margin-top: 50px; margin-left: 50px; font-weight: bolder; font-size: 20px">Aggregated value: 0</div>
+</body>
+
+</html>

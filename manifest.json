@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Div data collector",
+  "description": "Collects data from divs with specific class",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "128": "logo_128.png" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["popup.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
