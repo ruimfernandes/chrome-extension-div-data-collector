@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type="text/javascript" src="popup.js"></script>
   <title>Data collector</title>
 </head>
 
@@ -23,7 +22,7 @@
     <input type="text" onkeyup="setSelectCount(this.value)" />
   </div>
 
-  <button onclick="storeAggregatedValue()">Save data</button>
+  <button onclick="selectElements(10)" id="clickme">Save data</button>
   </br>
   <button onclick="clearAggregatedValue()">Clear data</button>
   </br>

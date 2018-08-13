@@ -8,12 +8,8 @@
     "default_popup": "popup.html"
   },
   "icons": { "128": "logo_128.png" },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "all_frames": true,
-      "js": ["popup.js"]
-    }
-  ],
-  "permissions": ["activeTab"]
+  "permissions": ["tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["bg.js"]
+  }
 }
